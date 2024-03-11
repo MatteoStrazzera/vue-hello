@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Hello</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            margin: 3rem;
+            font-size: 3rem;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+
+    </style>
 </head>
+
 <body>
+
+    <div id="app">
+
+        <h1>{{message}}</h1>
+
+        <img v-bind:src="image" alt="Rick Astley">
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
